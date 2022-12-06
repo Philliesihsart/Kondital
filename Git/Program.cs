@@ -17,6 +17,7 @@ class Program
         Console.Clear();
 
         Console.WriteLine("Dit kondital er: " + Kondital.BeregnKondital(maxpuls, hvilepuls));
+        Console.WriteLine("Din maksimale iltindtagelse er: " + Kondital.BeregnIltIndtagelse(maxpuls, hvilepuls, vægt));
     }
 
 }
@@ -28,4 +29,11 @@ class Kondital
         double intKondi = Math.Round((double)MaxPuls / HvilePuls * 15.3);
         return intKondi;
     }
+
+    public static double BeregnIltIndtagelse(int maxpuls, int hvilepuls, double vægt)
+        {
+            double intIltIndtagelse = Math.Round((double)Kondital.BeregnKondital(maxpuls, hvilepuls) / vægt * 1000);
+            return intIltIndtagelse;
+        }
+    
 }
