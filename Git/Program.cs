@@ -16,12 +16,16 @@ class Program
         double vægt = Convert.ToDouble(Console.ReadLine());
         Console.Clear();
 
-        Console.WriteLine("maxpuls: {0}\nHvilepuls: {1}\nVægt: {2}", maxpuls, hvilepuls, vægt);
+        Console.WriteLine("Dit kondital er: " + Kondital.BeregnKondital(maxpuls, hvilepuls) + " ml/kg/min");
     }
 
 }
 
 class Kondital
 {
-
+    public static double BeregnKondital(int MaxPuls, int HvilePuls)
+    {
+        double intKondi = Math.Round((double)MaxPuls / HvilePuls * 15.3);
+        return intKondi;
+    }
 }
