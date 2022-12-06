@@ -16,7 +16,7 @@ class Program
         double vægt = Convert.ToDouble(Console.ReadLine());
         Console.Clear();
 
-        Console.WriteLine("Dit kondital er: " + Kondital.BeregnKondital(maxpuls, hvilepuls) + " ml/kg/min");
+        Console.WriteLine("Dit kondital er: " + Kondital.BeregnKondital(maxpuls, hvilepuls));
     }
 
 }
