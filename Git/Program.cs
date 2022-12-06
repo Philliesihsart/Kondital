@@ -16,7 +16,12 @@ class Program
         double vægt = Convert.ToDouble(Console.ReadLine());
         Console.Clear();
 
-        Console.WriteLine("maxpuls: {0}\nHvilepuls: {1}\nVægt: {2}", maxpuls,hvilepuls,vægt);
+        Console.WriteLine("maxpuls: {0}\nHvilepuls: {1}\nVægt: {2}", maxpuls, hvilepuls, vægt);
     }
+
+}
+
+class Kondital
+{
 
 }
